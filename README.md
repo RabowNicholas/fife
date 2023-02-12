@@ -1,16 +1,20 @@
-# fife
+# Fife
 
-A new Flutter project.
+Write a snippet about fife
 
-## Getting Started
+## Environment Setup
 
-This project is a starting point for a Flutter application.
+These next steps will help you setup your environment in order to contribute to Fife.
 
-A few resources to get you started if this is your first Flutter project:
+- Download [VS Code](https://code.visualstudio.com/)
+- Download [Flutter](https://docs.flutter.dev/get-started/install) and follow guide to setup. 
+    - (If you need help adding flutter to `PATH`)[https://www.youtube.com/watch?v=MdMnPrUxm1w]
+    - To verify that you are done: run `flutter doctor`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Run app for first time
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Restart VS Code if it was running during flutter download and setup
+- run `open -a simulator` in terminal or plug in physical device
+- Open command palette using `shift+command+p` and run `Flutter: Select Device`
+- Click Run and Debug in left panel.
+- Wait for Xcode to build and app to display on device
