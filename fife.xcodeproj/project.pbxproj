@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		928F0C0A29A6ECC000D31756 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 928F0C0929A6ECC000D31756 /* FirebaseAuth */; };
+		928F0C0C29A6ED9D00D31756 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 928F0C0B29A6ED9D00D31756 /* GoogleService-Info.plist */; };
 		A4390D9029A5271E002BC6C3 /* fifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4390D8F29A5271E002BC6C3 /* fifeApp.swift */; };
 		A4390D9229A5271E002BC6C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4390D9129A5271E002BC6C3 /* ContentView.swift */; };
 		A4390D9429A5271F002BC6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4390D9329A5271F002BC6C3 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		928F0C0B29A6ED9D00D31756 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		928F0C0D29A6F05500D31756 /* fife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fife.entitlements; sourceTree = "<group>"; };
 		A4390D8C29A5271E002BC6C3 /* fife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4390D8F29A5271E002BC6C3 /* fifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifeApp.swift; sourceTree = "<group>"; };
 		A4390D9129A5271E002BC6C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928F0C0A29A6ECC000D31756 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +104,14 @@
 		A4390D8E29A5271E002BC6C3 /* fife */ = {
 			isa = PBXGroup;
 			children = (
+				928F0C0D29A6F05500D31756 /* fife.entitlements */,
 				A4390D8F29A5271E002BC6C3 /* fifeApp.swift */,
 				A4390D9129A5271E002BC6C3 /* ContentView.swift */,
 				A4390D9329A5271F002BC6C3 /* Assets.xcassets */,
 				A4390D9829A5271F002BC6C3 /* Persistence.swift */,
 				A4390D9D29A5271F002BC6C3 /* Info.plist */,
 				A4390D9A29A5271F002BC6C3 /* fife.xcdatamodeld */,
+				928F0C0B29A6ED9D00D31756 /* GoogleService-Info.plist */,
 				A4390D9529A5271F002BC6C3 /* Preview Content */,
 			);
 			path = fife;
@@ -151,6 +158,9 @@
 			dependencies = (
 			);
 			name = fife;
+			packageProductDependencies = (
+				928F0C0929A6ECC000D31756 /* FirebaseAuth */,
+			);
 			productName = fife;
 			productReference = A4390D8C29A5271E002BC6C3 /* fife.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +233,9 @@
 				Base,
 			);
 			mainGroup = A4390D8329A5271E002BC6C3;
+			packageReferences = (
+				928F0C0829A6ECC000D31756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A4390D8D29A5271E002BC6C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +254,7 @@
 			files = (
 				A4390D9729A5271F002BC6C3 /* Preview Assets.xcassets in Resources */,
 				A4390D9429A5271F002BC6C3 /* Assets.xcassets in Resources */,
+				928F0C0C29A6ED9D00D31756 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,12 +438,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fife/fife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fife/Preview Content\"";
 				DEVELOPMENT_TEAM = 9V8XX88M3P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,7 +456,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyra.fife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schemecreative.lyra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -453,12 +469,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fife/fife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fife/Preview Content\"";
 				DEVELOPMENT_TEAM = 9V8XX88M3P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,7 +487,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyra.fife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schemecreative.lyra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -593,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		928F0C0829A6ECC000D31756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		928F0C0929A6ECC000D31756 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 928F0C0829A6ECC000D31756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A4390D9A29A5271F002BC6C3 /* fife.xcdatamodeld */ = {
