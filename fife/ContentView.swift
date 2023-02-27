@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var number = ""
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 80) {
+        VStack(alignment: .leading, spacing: 40) {
            Text("Log in using")
             Button() {
                 goToPhoneVerification()
