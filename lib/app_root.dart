@@ -1,4 +1,4 @@
-import 'package:fife/alarm_page.dart';
+import 'package:fife/alarm/alarm_page.dart';
 import 'package:flutter/cupertino.dart';
 
 class AppRoot extends StatelessWidget {
