@@ -3,6 +3,7 @@ import 'package:fife/common/spacing.dart';
 import 'package:fife/common/text_writer.dart';
 import 'package:fife/style.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class EditAlarmSheet extends StatelessWidget {
   const EditAlarmSheet({super.key});
@@ -16,10 +17,7 @@ class EditAlarmSheet extends StatelessWidget {
         children: Spacing.spaceBetween([
           _header(context),
           _daysActive,
-          TextWriter(
-            text: '10:15 AM',
-            style: FifeTheme().textScheme.xlarge,
-          ),
+          _editDetails,
         ], 20),
       ),
     );
@@ -98,6 +96,30 @@ class EditAlarmSheet extends StatelessWidget {
       ], 10),
     );
   }
+
+  Widget get _editDetails {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: Spacing.spaceBetween([
+        TextWriter(
+          text: 'Time',
+          style: FifeTheme().textScheme.large,
+        ),
+        Container(
+          width: 350,
+          height: 200,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            color: FifeTheme().colorScheme.background,
+          ),
+          child: CupertinoDatePicker(
+            onDateTimeChanged: (_) {},
+            mode: CupertinoDatePickerMode.time,
+          ),
+        ),
+      ], 10),
+    );
+  }
 }
 
 class DaySelector extends StatefulWidget {
@@ -130,7 +152,6 @@ class _DaySelectorState extends State<DaySelector> {
         height: 30,
         width: 30,
         duration: const Duration(milliseconds: 200),
-        // padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: _selectedColor,
