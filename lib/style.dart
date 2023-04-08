@@ -17,6 +17,7 @@ class FifeColorScheme {
   Color get white => Colors.white;
   Color get grey => Colors.grey;
   Color get gold => Colors.yellow;
+  Color get blue => Colors.blue;
 }
 
 class FifeTextStyleScheme {
