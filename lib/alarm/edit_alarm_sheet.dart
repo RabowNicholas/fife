@@ -17,7 +17,8 @@ class EditAlarmSheet extends StatelessWidget {
         children: Spacing.spaceBetween([
           _header(context),
           _daysActive,
-          _editDetails,
+          _time,
+          _music,
         ], 20),
       ),
     );
@@ -97,7 +98,7 @@ class EditAlarmSheet extends StatelessWidget {
     );
   }
 
-  Widget get _editDetails {
+  Widget get _time {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: Spacing.spaceBetween([
@@ -115,6 +116,58 @@ class EditAlarmSheet extends StatelessWidget {
           child: CupertinoDatePicker(
             onDateTimeChanged: (_) {},
             mode: CupertinoDatePickerMode.time,
+          ),
+        ),
+      ], 10),
+    );
+  }
+
+  Widget get _music {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: Spacing.spaceBetween([
+        TextWriter(
+          text: 'Music',
+          style: FifeTheme().textScheme.large,
+        ),
+        Container(
+          width: 350,
+          padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            color: FifeTheme().colorScheme.background,
+          ),
+          child: ClickableWidget(
+            onTap: () {},
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(
+                  width: 100,
+                  height: 100,
+                  child: Placeholder(),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  flex: 3,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: Spacing.spaceBetween([
+                      TextWriter(
+                        text: 'Title',
+                        style: FifeTheme().textScheme.medium,
+                      ),
+                      const TextWriter(
+                        text: 'Artist',
+                      ),
+                      const TextWriter(
+                        text: '0:30 - 0:45',
+                      ),
+                    ], 2),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ], 10),
