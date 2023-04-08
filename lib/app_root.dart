@@ -1,4 +1,4 @@
-import 'package:fife/alarm/alarm_page.dart';
+import 'package:fife/ui/alarm/alarm_page.dart';
 import 'package:flutter/material.dart';
 
 class AppRoot extends StatelessWidget {
@@ -7,7 +7,7 @@ class AppRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const AlarmPage(),
+      home: AlarmPage(),
       theme: ThemeData.dark(),
       routes: routes,
     );
@@ -15,7 +15,7 @@ class AppRoot extends StatelessWidget {
 
   Map<String, Widget Function(BuildContext context)> get routes {
     return {
-      '/alarm': (c) => const AlarmPage(),
+      '/alarm': (c) => AlarmPage(),
     };
   }
 }

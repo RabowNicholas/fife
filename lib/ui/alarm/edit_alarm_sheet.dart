@@ -1,6 +1,6 @@
-import 'package:fife/common/clickable_widget.dart';
-import 'package:fife/common/spacing.dart';
-import 'package:fife/common/text_writer.dart';
+import 'package:fife/ui/common/clickable_widget.dart';
+import 'package:fife/ui/common/spacing.dart';
+import 'package:fife/ui/common/text_writer.dart';
 import 'package:fife/style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

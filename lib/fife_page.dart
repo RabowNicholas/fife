@@ -6,7 +6,6 @@ abstract class FifePage extends StatelessWidget {
   const FifePage({super.key});
 
   Widget content(BuildContext context);
-  Widget? bottomSheet(BuildContext context) => null;
 
   @override
   Widget build(BuildContext context) {
@@ -22,5 +21,21 @@ abstract class FifePage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class RootWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+}
+
+class _RootWidgetState extends State<RootWidget> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
   }
 }
