@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>132586754494-fiel9bttdg8hblr3dm8sieqq9t8tt6gd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.132586754494-fiel9bttdg8hblr3dm8sieqq9t8tt6gd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBnYEViFvgF4WtleUM9UOBOsXkqrwDNZtY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>132586754494</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lyra.fife</string>
+	<key>PROJECT_ID</key>
+	<string>fife-2ea88</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fife-2ea88.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:132586754494:ios:2a7d86310bda4d82f9e9ef</string>
+</dict>
+</plist>

@@ -1,5 +1,5 @@
-import 'package:fife/service/models.dart';
-import 'package:fife/ui/alarm/edit_alarm_sheet.dart';
+import 'package:fife/flows/alarm/api/models.dart';
+import 'package:fife/flows/alarm/ui/edit_alarm_sheet.dart';
 import 'package:fife/ui/common/text_writer.dart';
 import 'package:fife/fife_page.dart';
 import 'package:fife/style.dart';
