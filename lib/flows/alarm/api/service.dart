@@ -1,4 +1,4 @@
-import 'package:fife/service/models.dart';
+import 'package:fife/flows/alarm/api/models.dart';
 
 abstract class FifeService {
   Future<List<AlarmModel>> fetchAlarms(String userId);

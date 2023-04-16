@@ -13,7 +13,7 @@ class AlarmPage extends FifePage {
       time: DateTime.now(),
       schedule: const Schedule(),
       music: const Music(
-        provider: StreamingService.spotify,
+        provider: StreamingService.local,
         artist: 'Russ',
         title: 'Pull the Trigger',
         duration: TimeDuration(start: 0, end: 100),
@@ -23,7 +23,7 @@ class AlarmPage extends FifePage {
       time: DateTime.now(),
       schedule: const Schedule(),
       music: const Music(
-        provider: StreamingService.spotify,
+        provider: StreamingService.local,
         artist: 'Russ',
         title: 'Pull the Trigger',
         duration: TimeDuration(start: 0, end: 100),
