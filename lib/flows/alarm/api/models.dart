@@ -91,7 +91,8 @@ class TimeDuration extends Equatable {
 }
 
 enum StreamingService {
-  amazon,
-  spotify,
-  apple,
+  local,
+  // amazon,
+  // spotify,
+  // apple,
 }
